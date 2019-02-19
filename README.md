@@ -16,6 +16,7 @@
 > mvn install
 
 > mvn spring-boot:run
+
 You can use a IDE like Intellij
 - import the project, the maven will download automatically the dependences.
 - create a Run/Debug Configuration
