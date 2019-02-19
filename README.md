@@ -6,7 +6,7 @@
 - JWT
 - Spring-Data
 - Flyway
-- Lombook
+- Lombok
 - H2 DataBase
 - Swagger for api docs
 
