@@ -16,19 +16,19 @@ import java.util.stream.Collectors;
 @NoArgsConstructor
 public class UserSS implements UserDetails{
 
-    private Integer id;
+    private Long id;
     private String email;
     private String password;
     private Collection<? extends GrantedAuthority> authorities;
 
-    public UserSS(Integer id, String email, String password, Set<Role> roles) {
+    public UserSS(Long id, String email, String password, Set<Role> roles) {
         this.id = id;
         this.email = email;
         this.password = password;
-        this.authorities = roles.stream().map(r -> new SimpleGrantedAuthority((r.getDescription()))).collect(Collectors.toSet());
+//        this.authorities = roles.stream().map(r -> new SimpleGrantedAuthority((r.getDescription()))).collect(Collectors.toSet());
     }
 
-    public Integer getId() {
+    public Long getId() {
         return  id;
     }
 
