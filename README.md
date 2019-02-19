@@ -3,6 +3,7 @@
 ## Features
 - Spring-Boot 2.1.3
 - Spring-Security
+- JWT
 - Spring-Data
 - Flyway
 - Lombook
