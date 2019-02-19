@@ -14,6 +14,7 @@
 - Just clone the project to a folder.
 - execute in project folder:
 > mvn install
+
 > mvn spring-boot:run
 You can use a IDE like Intellij
 - import the project, the maven will download automatically the dependences.
