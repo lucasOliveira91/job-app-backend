@@ -4,8 +4,12 @@ spring:
     driverClassName: org.h2.Driver
     username: sa
     password: sa
-  h2.console.enabled: false'
+  h2.console.enabled: true
 
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
   hibernate.ddl-auto: validate
+
+jwt:
+  secret: CaractererSequence
+  expiration: 86400000
