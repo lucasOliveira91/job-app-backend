@@ -1,14 +1,10 @@
-package br.com.maisvida.jobapp.security;
+package br.com.maisvida.jobapp.filter;
 
 import org.springframework.stereotype.Component;
-
 import javax.servlet.*;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
- * Created by loliveira on 18/02/19.
- */
 @Component
 public class HeaderExposureFilter implements Filter{
 

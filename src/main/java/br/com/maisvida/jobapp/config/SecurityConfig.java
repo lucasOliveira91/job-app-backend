@@ -65,9 +65,9 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception{
         //For h2 usage
-        if(Arrays.asList(env.getActiveProfiles()).contains("test")){
+//        if(Arrays.asList(env.getActiveProfiles()).contains("test")){
             http.headers().frameOptions().disable();
-        }
+//        }
 
 
         //As our applicaiton is stateless, our sistem isn't vunerable to CSRF attack
@@ -84,9 +84,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         http.addFilter(new JwtAuthorizationFilter(authenticationManager(), jwtUtil, userDetailsService));
         //it take care to disable the session creation.
         http.sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS);
-
-        //this need to show the h2 console.
-        http.headers().frameOptions().disable();
     }
 
     @Override
