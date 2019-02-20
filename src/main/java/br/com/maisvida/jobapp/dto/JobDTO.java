@@ -2,6 +2,7 @@ package br.com.maisvida.jobapp.dto;
 
 import br.com.maisvida.jobapp.domain.Job;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 
@@ -9,6 +10,7 @@ import java.util.List;
  * Created by loliveira on 18/02/19.
  */
 @Data
+@NoArgsConstructor
 public class JobDTO {
     private Long id;
     private String name;

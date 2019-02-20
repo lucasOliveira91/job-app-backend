@@ -50,6 +50,12 @@ public class JobResource implements JobResourceSwagger {
         return ResponseEntity.created(uri).build();
     }
 
+    @GetMapping(value = "/{id}")
+    public ResponseEntity<JobDTO> find(@PathVariable Long id) {
+        Job job = jobService.find(id);
+        return ResponseEntity.ok().body(new JobDTO(job));
+    }
+
 
     @PutMapping(value = "/{id}")
     public ResponseEntity<Void> update(@Valid @RequestBody JobDTO obj, @PathVariable Long id) {
@@ -58,7 +64,6 @@ public class JobResource implements JobResourceSwagger {
         return ResponseEntity.noContent().build();
     }
 
-    @PreAuthorize("hasAnyRole('ADMIN')")
     @DeleteMapping(value = "/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         jobService.delete(id);
