@@ -9,6 +9,7 @@
 - Lombok
 - H2 DataBase
 - Swagger for api docs
+- Integration Tests
 
 ## Instalation
 - Just clone the project to a folder.
