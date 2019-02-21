@@ -9,6 +9,8 @@
 - Lombok
 - H2 DataBase
 - Swagger for api docs
+- Integration Tests
+- Maven
 
 ## Instalation
 - Just clone the project to a folder.
@@ -20,3 +22,6 @@
 You can use a IDE like Intellij
 - import the project, the maven will download automatically the dependences.
 - create a Run/Debug Configuration
+
+## Run Tests
+> mvn install
