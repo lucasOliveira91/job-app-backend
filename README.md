@@ -10,6 +10,7 @@
 - H2 DataBase
 - Swagger for api docs
 - Integration Tests
+- Maven
 
 ## Instalation
 - Just clone the project to a folder.
