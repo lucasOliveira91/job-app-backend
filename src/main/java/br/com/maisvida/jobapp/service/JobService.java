@@ -35,10 +35,13 @@ public class JobService {
     }
 
     public Job fromDTO(JobDTO obj) {
-        return null;
+        Job job = new Job();
+        job.setName(obj.getName());
+        return job;
     }
 
     public Job insert(Job objx) {
+        objx.setId(null);
         Job save = repository.save(objx);
         taskRepository.saveAll(save.getTasks());
         return save;

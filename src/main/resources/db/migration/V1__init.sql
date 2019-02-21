@@ -16,9 +16,26 @@ CREATE TABLE task (
   FOREIGN KEY (job_id) REFERENCES job(id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
-INSERT INTO job values(null,'Job Test One', null, null);
-INSERT INTO task values(null,'Task Test One', 1, null);
+INSERT INTO job values(null,'Job Test Jedi', null, null);
+INSERT INTO task values(null,'Task Test Jedi', 1, null);
 
+INSERT INTO job values(null,'Job Test Sith', null, null);
+INSERT INTO task values(null,'Task Test Sith', 2, null);
+
+INSERT INTO job values(null,'Job Test Leia', null, null);
+INSERT INTO task values(null,'Task Test Leia', 3, null);
+
+INSERT INTO job values(null,'Job Test Ben', null, null);
+INSERT INTO task values(null,'Task Test Ben', 4, null);
+
+INSERT INTO job values(null,'Job Test Luky', null, null);
+INSERT INTO task values(null,'Task Test Luky', 5, null);
+
+INSERT INTO job values(null,'Job Test Jango Fett', null, null);
+INSERT INTO task values(null,'Task Test Fett', 6, null);
+
+INSERT INTO job values(null,'Job Test Rey', null, null);
+INSERT INTO task values(null,'Task Test Rey', 7, null);
 
 CREATE TABLE user (
   id bigint(20) NOT NULL AUTO_INCREMENT,

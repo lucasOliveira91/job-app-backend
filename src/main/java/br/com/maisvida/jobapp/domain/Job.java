@@ -3,6 +3,7 @@ package br.com.maisvida.jobapp.domain;
 import lombok.Data;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ public class Job {
     @OneToOne
     private Job parentJob;
 
-    @OneToMany(mappedBy = "job")
-    private List<Task> tasks;
+    @OneToMany(mappedBy = "job", cascade = CascadeType.ALL)
+    private List<Task> tasks = new ArrayList<>();
     private Boolean active;
 }
